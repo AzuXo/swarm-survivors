@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash Z:/Claude/survivors-game/.claude/auto_build.sh",
+            "timeout": 90,
+            "statusMessage": "Auto-rebuilding Survivors.exe..."
+          }
+        ]
+      }
+    ]
+  }
+}

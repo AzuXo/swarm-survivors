@@ -1,0 +1,8 @@
+# Godot 4 editor cache (regenerated on import)
+.godot/
+
+# Build artifacts (published via GitHub Releases instead)
+build/
+
+# Local Claude Code overrides
+.claude/settings.local.json

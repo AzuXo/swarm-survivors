@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 20.0
+
+[node name="Brute" type="CharacterBody2D"]
+script = ExtResource("1")
+speed = 50.0
+max_health = 80
+contact_damage = 25
+damage_interval = 1.0
+xp_value = 5
+radius = 20.0
+color = Color(0.5, 0.05, 0.15, 1)
+sprite_id = "enemy3"
+sprite_idle_count = 0
+sprite_walk_count = 6
+sprite_walk_prefix = "fly"
+sprite_scale = 0.55
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
